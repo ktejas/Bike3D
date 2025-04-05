@@ -7,13 +7,15 @@ public class BikeController : MonoBehaviour
 
     [HideInInspector]
     public Vector3 velocity;
-    public float maxSpeed, acceleration, steerStrength, gravity, bikeXTiltInrement = 0.9f, zTiltAngle = 45f, handleRotation = 30f, handleRotationSpeed = 0.15f;
+    public float maxSpeed, acceleration, steerStrength, gravity, bikeXTiltInrement = 0.9f, zTiltAngle = 45f, handleRotation = 30f, handleRotationSpeed = 0.15f, skidmarkWidth = 0.062f, minSkidmarkVelocity = 10f;
+
     [Range(1,10)]
     public float brakingFactor;
 
     float rayLength;
     RaycastHit hit;
     public LayerMask drivableSurface;
+    public TrailRenderer skidmarksTrailRenderer;
 
     public Rigidbody sphereRB, bikeBodyRB;
     public GameObject handle;
@@ -25,6 +27,9 @@ public class BikeController : MonoBehaviour
         bikeBodyRB.transform.parent = null;
 
         rayLength = sphereRB.GetComponent<SphereCollider>().radius + 0.2f;
+
+        skidmarksTrailRenderer.startWidth = skidmarkWidth;
+        skidmarksTrailRenderer.emitting = false;
     }
 
     // Update is called once per frame
@@ -42,6 +47,9 @@ public class BikeController : MonoBehaviour
     private void FixedUpdate()
     {
         Movement();
+
+        //Visuals
+        Skidmarks();
     }
 
     private void Movement()
@@ -115,5 +123,17 @@ public class BikeController : MonoBehaviour
         Quaternion newRotation = Quaternion.Euler(targetRotation.eulerAngles.x, transform.rotation.eulerAngles.y, targetRotation.eulerAngles.z);
        
         bikeBodyRB.MoveRotation(newRotation);
+    }
+
+    void Skidmarks()
+    {
+        if(IsGrounded() && Mathf.Abs(velocity.x) > minSkidmarkVelocity)
+        {
+            skidmarksTrailRenderer.emitting = true;
+        }
+        else
+        {
+            skidmarksTrailRenderer.emitting = false;
+        }
     }
 }
