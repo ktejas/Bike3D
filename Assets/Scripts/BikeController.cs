@@ -7,7 +7,7 @@ public class BikeController : MonoBehaviour
 
     [HideInInspector]
     public Vector3 velocity;
-    public float maxSpeed, acceleration, steerStrength, gravity, bikeXTiltInrement = 0.9f, zTiltAngle = 45f, handleRotation = 30f, handleRotationSpeed = 0.15f, skidmarkWidth = 0.062f, minSkidmarkVelocity = 10f;
+    public float maxSpeed, acceleration, steerStrength, gravity, bikeXTiltInrement = 0.9f, zTiltAngle = 45f, handleRotation = 30f, handleRotationSpeed = 0.15f, skidmarkWidth = 0.062f, minSkidmarkVelocity = 10f, tyreRotSpeed = 10000f, normalDrag = 2f, driftDrag = 0.5f;
 
     [Range(1,10)]
     public float brakingFactor;
@@ -16,9 +16,20 @@ public class BikeController : MonoBehaviour
     RaycastHit hit;
     public LayerMask drivableSurface;
     public TrailRenderer skidmarksTrailRenderer;
+    public AudioSource engineSound;
+    public AudioSource skidSound;
+    [Range(0,1)]
+    public float minPitch;
+    [Range(1,5)]
+    public float maxPitch;
 
     public Rigidbody sphereRB, bikeBodyRB;
     public GameObject handle;
+
+    public GameObject frontTyre, backTyre;
+
+    public ParticleSystem smokePartSystem;
+    public AnimationCurve turningCurve;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -30,6 +41,9 @@ public class BikeController : MonoBehaviour
 
         skidmarksTrailRenderer.startWidth = skidmarkWidth;
         skidmarksTrailRenderer.emitting = false;
+        skidSound.mute = true;
+
+        Smoke();
     }
 
     // Update is called once per frame
@@ -50,6 +64,15 @@ public class BikeController : MonoBehaviour
 
         //Visuals
         Skidmarks();
+
+        //Sounds
+        EngineSound();
+
+        //Type Rotation
+        frontTyre.transform.Rotate(Vector3.right, tyreRotSpeed * Time.deltaTime * moveInput, Space.Self);
+        backTyre.transform.Rotate(Vector3.right, tyreRotSpeed * Time.deltaTime * moveInput, Space.Self);
+
+        Smoke();
     }
 
     private void Movement()
@@ -59,8 +82,8 @@ public class BikeController : MonoBehaviour
             if(!Input.GetKey(KeyCode.Space))
             {
                 Acceleration();
-                Rotation();
             }
+            Rotation();
             Brake();
         }
         else
@@ -77,7 +100,7 @@ public class BikeController : MonoBehaviour
 
     private void Rotation()
     {
-        transform.Rotate(0, steerInput * moveInput * currentVelocityOffset * steerStrength * Time.deltaTime, 0f,  Space.World);
+        transform.Rotate(0, steerInput * moveInput * turningCurve.Evaluate(Mathf.Abs(currentVelocityOffset)) * steerStrength * Time.deltaTime, 0f,  Space.World);
 
         handle.transform.localRotation = Quaternion.Slerp(handle.transform.localRotation, Quaternion.Euler(handle.transform.localRotation.eulerAngles.x, handleRotation * steerInput, handle.transform.localRotation.eulerAngles.z), handleRotationSpeed);
     }
@@ -87,12 +110,21 @@ public class BikeController : MonoBehaviour
         if(Input.GetKey(KeyCode.Space))
         {
             sphereRB.linearVelocity *= brakingFactor / 10f;
+            sphereRB.linearDamping = driftDrag;
+        }
+        else
+        {
+            sphereRB.linearDamping = normalDrag;
         }
     }
 
     bool IsGrounded()
     {
-        if(Physics.Raycast(sphereRB.position, Vector3.down, out hit, rayLength, drivableSurface))
+        float radius = rayLength - 0.02f;
+        Vector3 origin = sphereRB.transform.position + Vector3.up * radius;
+
+        //if(Physics.Raycast(sphereRB.position, Vector3.down, out hit, rayLength, drivableSurface))
+        if(Physics.SphereCast(origin, radius + 0.2f, -transform.up, out hit, rayLength, drivableSurface))
         {
             return true;
         }
@@ -127,13 +159,32 @@ public class BikeController : MonoBehaviour
 
     void Skidmarks()
     {
-        if(IsGrounded() && Mathf.Abs(velocity.x) > minSkidmarkVelocity)
+        if(IsGrounded() && Mathf.Abs(velocity.x) > minSkidmarkVelocity || Input.GetKey(KeyCode.Space))
         {
             skidmarksTrailRenderer.emitting = true;
+            skidSound.mute = false;
         }
         else
         {
             skidmarksTrailRenderer.emitting = false;
+            skidSound.mute = true;
+        }
+    }
+
+    void EngineSound()
+    {
+        engineSound.pitch = Mathf.Lerp(minPitch, maxPitch, Mathf.Abs(currentVelocityOffset));
+    }
+
+    void Smoke()
+    {
+        if(skidmarksTrailRenderer.emitting)
+        {
+            smokePartSystem.Play();
+        }
+        else if(!skidmarksTrailRenderer.emitting)
+        {
+            smokePartSystem.Stop();
         }
     }
 }
