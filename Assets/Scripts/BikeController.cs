@@ -1,4 +1,5 @@
 using UnityEngine;
+//using UnityEngine.InputSystem;
 
 public class BikeController : MonoBehaviour
 {
@@ -51,6 +52,8 @@ public class BikeController : MonoBehaviour
     {
         moveInput = Input.GetAxis("Vertical");
         steerInput = Input.GetAxis("Horizontal");
+        //moveInput = InputSystem.actions.FindAction("Move").ReadValue<UnityEngine.Vector2>().x;
+        //steerInput = InputSystem.actions.FindAction("Move").ReadValue<UnityEngine.Vector2>().y;
 
         transform.position = sphereRB.transform.position;
 
@@ -79,6 +82,7 @@ public class BikeController : MonoBehaviour
     {
         if(IsGrounded())
         {
+            //if(Keyboard.current[Key.Space].wasPressedThisFrame)
             if(!Input.GetKey(KeyCode.Space))
             {
                 Acceleration();
@@ -107,6 +111,7 @@ public class BikeController : MonoBehaviour
 
     private void Brake()
     {
+        //if(Keyboard.current[Key.Space].wasPressedThisFrame)
         if(Input.GetKey(KeyCode.Space))
         {
             sphereRB.linearVelocity *= brakingFactor / 10f;
@@ -160,6 +165,7 @@ public class BikeController : MonoBehaviour
     void Skidmarks()
     {
         if(IsGrounded() && Mathf.Abs(velocity.x) > minSkidmarkVelocity || Input.GetKey(KeyCode.Space))
+        //if(IsGrounded() && Mathf.Abs(velocity.x) > minSkidmarkVelocity || Keyboard.current[Key.Space].wasPressedThisFrame)
         {
             skidmarksTrailRenderer.emitting = true;
             skidSound.mute = false;
@@ -186,5 +192,16 @@ public class BikeController : MonoBehaviour
         {
             smokePartSystem.Stop();
         }
+    }
+
+    public void ExternalBrakePress()
+    { Acceleration();
+        sphereRB.linearVelocity *= brakingFactor / 10f;
+        sphereRB.linearDamping = driftDrag;
+    }
+
+    public void ExternalBrakeRelease()
+    {
+        sphereRB.linearDamping = normalDrag;
     }
 }
