@@ -50,8 +50,8 @@ public class BikeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveInput = Input.GetAxis("Vertical");
-        steerInput = Input.GetAxis("Horizontal");
+        //moveInput = Input.GetAxis("Vertical");
+        //steerInput = Input.GetAxis("Horizontal");
         //moveInput = InputSystem.actions.FindAction("Move").ReadValue<UnityEngine.Vector2>().x;
         //steerInput = InputSystem.actions.FindAction("Move").ReadValue<UnityEngine.Vector2>().y;
 
@@ -194,8 +194,18 @@ public class BikeController : MonoBehaviour
         }
     }
 
+    public void ExternalAccPress()
+    {
+        moveInput = 1;
+    }
+
+    public void ExternalAccRelease()
+    {
+        moveInput = 0;
+    }
+
     public void ExternalBrakePress()
-    { Acceleration();
+    {
         sphereRB.linearVelocity *= brakingFactor / 10f;
         sphereRB.linearDamping = driftDrag;
     }
@@ -203,5 +213,25 @@ public class BikeController : MonoBehaviour
     public void ExternalBrakeRelease()
     {
         sphereRB.linearDamping = normalDrag;
+    }
+
+    public void ExternalLeftPress()
+    {
+        steerInput = -1;
+    }
+
+    public void ExternalLeftRelease()
+    {
+        steerInput = 0;
+    }
+
+    public void ExternalRightPress()
+    {
+        steerInput = 1;
+    }
+
+    public void ExternalRightRelease()
+    {
+        steerInput = 0;
     }
 }

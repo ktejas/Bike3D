@@ -27,11 +27,26 @@ public class GameManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player"); // Find the player object by tag   
     }
 
-    public void OnClickUIBrakePress()
-    {   Console.WriteLine("Brake Pressed");
-        // Handle UI brake click event
+    public void OnClickUIAccPress()
+    {
         if (player != null)
-        {Console.WriteLine("Brake Pressed Player not null");
+        {
+            player.GetComponent<BikeController>().ExternalAccPress(); // Call the Brake method on the PlayerController component
+        }
+    }
+
+    public void OnClickUIAccRelease()
+    {
+        if (player != null)
+        {
+            player.GetComponent<BikeController>().ExternalAccRelease(); // Call the Brake method on the PlayerController component
+        }
+    }
+
+    public void OnClickUIBrakePress()
+    {   
+        if (player != null)
+        {
             player.GetComponent<BikeController>().ExternalBrakePress(); // Call the Brake method on the PlayerController component
         }
     }
@@ -42,6 +57,38 @@ public class GameManager : MonoBehaviour
         if (player != null)
         {
             player.GetComponent<BikeController>().ExternalBrakeRelease(); // Call the Brake method on the PlayerController component
+        }
+    }
+
+    public void OnClickUILeftPress()
+    {
+        if (player != null)
+        {
+            player.GetComponent<BikeController>().ExternalLeftPress(); // Call the Brake method on the PlayerController component
+        }
+    }
+
+    public void OnClickUILeftRelease()
+    {
+        if (player != null)
+        {
+            player.GetComponent<BikeController>().ExternalLeftRelease(); // Call the Brake method on the PlayerController component
+        }
+    }
+
+    public void OnClickUIRightPress()
+    {
+        if (player != null)
+        {
+            player.GetComponent<BikeController>().ExternalRightPress(); // Call the Brake method on the PlayerController component
+        }
+    }
+
+    public void OnClickUIRightRelease()
+    {
+        if (player != null)
+        {
+            player.GetComponent<BikeController>().ExternalRightRelease(); // Call the Brake method on the PlayerController component
         }
     }
 }
