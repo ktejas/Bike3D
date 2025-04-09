@@ -50,8 +50,8 @@ public class BikeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //moveInput = Input.GetAxis("Vertical");
-        //steerInput = Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Vertical");
+        steerInput = Input.GetAxis("Horizontal");
         //moveInput = InputSystem.actions.FindAction("Move").ReadValue<UnityEngine.Vector2>().x;
         //steerInput = InputSystem.actions.FindAction("Move").ReadValue<UnityEngine.Vector2>().y;
 
