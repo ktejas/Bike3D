@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: abc00628e8e7e7a49b6d09a9920f4122
+timeCreated: 1433170852
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 19156
+  packageName: Motorbike Starter Kit
+  packageVersion: 2.1
+  assetPath: Assets/MSK 2.2/Models/Motorbikes/Motorbike (Police)/Materials/wheel.mat
+  uploadId: 104518

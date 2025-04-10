@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: addae686d7159e34c9fc153428053414
+timeCreated: 1450828645
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 19156
+  packageName: Motorbike Starter Kit
+  packageVersion: 2.1
+  assetPath: Assets/MSK 2.2/Scripts/PoliceLights.cs
+  uploadId: 104518

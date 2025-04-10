@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ab70c098a52a04be88096d20e1540cb8
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 19156
+  packageName: Motorbike Starter Kit
+  packageVersion: 2.1
+  assetPath: Assets/MSK 2.2/Standard Assets/Projectors/Sources/Shaders/Projector
+    Light.shader
+  uploadId: 104518
