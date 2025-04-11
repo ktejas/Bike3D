@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class LoadingMenu : MonoBehaviour
 {
+
+    public float loadingTime = 5f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,7 +20,7 @@ public class LoadingMenu : MonoBehaviour
 
     IEnumerator LoadMenuScene()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(loadingTime);
         UnityEngine.SceneManagement.SceneManager.LoadScene("Map01");
     }
 }

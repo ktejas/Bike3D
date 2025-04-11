@@ -39,7 +39,7 @@ void FixedUpdate () //This has to be in fixed update or it wont get time to make
 	to get the correct position
 	*/
 
-	Vector3 skidPoint  = GroundHit.point + 2*(skidCaller.GetComponent<Rigidbody>().velocity) * Time.deltaTime;
+	Vector3 skidPoint  = GroundHit.point + 2*(skidCaller.GetComponent<Rigidbody>().linearVelocity) * Time.deltaTime;
 	
 	//Add skidmark at the point using AddSkidMark function of the Skidmarks object
 	//Syntax: AddSkidMark(Point, Normal, Intensity(max value 1), Last Skidmark index);

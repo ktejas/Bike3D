@@ -556,7 +556,7 @@ public class BikeControl : MonoBehaviour
 
         
 
-        speed = myRigidbody.velocity.magnitude * 2.7f;
+        speed = myRigidbody.linearVelocity.magnitude * 2.7f;
 
 
         if (crash)
@@ -934,11 +934,11 @@ public class BikeControl : MonoBehaviour
                 if (!crash)
                 {
 
-                    myRigidbody.angularDrag = 10.0f;
+                    myRigidbody.angularDamping = 10.0f;
                 }
                 else
                 {
-                    myRigidbody.angularDrag = 0.0f;
+                    myRigidbody.angularDamping = 0.0f;
 
 
                 }
@@ -973,7 +973,7 @@ public class BikeControl : MonoBehaviour
                 {
 
                     myRigidbody.centerOfMass = new Vector3(0, 0.2f, 0);
-                    myRigidbody.angularDrag = 1.0f;
+                    myRigidbody.angularDamping = 1.0f;
 
                     myRigidbody.AddForce(0, -10000, 0);
                 }

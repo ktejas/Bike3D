@@ -227,7 +227,7 @@ public class BikeCamera : MonoBehaviour
 
     void Update()
     {
-
+        Console.WriteLine("BikeCamera Update");
         if (!target) return;
 
 
