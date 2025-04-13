@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: 0621bc0c2c317444688869c721128e0e
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Area0_Nuki
+    second: {fileID: 2100000, guid: dc842c48fce7b7e459a1bdfd33b08c5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DartGreenDeep
+    second: {fileID: 2100000, guid: 902639f5ece1e50429ce2bfae9615b11, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DartGreenDeep2
+    second: {fileID: 2100000, guid: c5b6e4f93e2959a4c8d0c088976ca3d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DartGreenLight
+    second: {fileID: 2100000, guid: c97011f7819da1e42951d43c768b5463, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Du_ExciteBike_daikanban
+    second: {fileID: 2100000, guid: 6e13e06915af6604daabb35b3ccba2f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EBsign01
+    second: {fileID: 2100000, guid: ec27b7ff878eca34487e0f61ff276926, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SitunaiWallBase
+    second: {fileID: 2100000, guid: 6564c65e4e659ca4389641ed1bfd11f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TireRed
+    second: {fileID: 2100000, guid: 353b628641b9f0b48a1953c7ff280b87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TireWhite
+    second: {fileID: 2100000, guid: b533ab75fadd86740b1d49107d8b9a7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ct_window03
+    second: {fileID: 2100000, guid: fa925e9be9018d6438714dded4217854, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: di_TreeA_Leaf
+    second: {fileID: 2100000, guid: 4ebfdd403b0d6be4d88d7acc4a4e4dce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_Cushion_Red
+    second: {fileID: 2100000, guid: b16343eff31af6b40b7f994439d6016d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_Rediron01
+    second: {fileID: 2100000, guid: 97d8719255980f3478d51044d2c47381, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_StadiumSignboard
+    second: {fileID: 2100000, guid: db58f654dc6db0547b4b768ce7127f50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_bench
+    second: {fileID: 2100000, guid: b41b2f8519f394a408e2fa1fbe923071, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_depth_
+    second: {fileID: 2100000, guid: b8f8cf4900f8f3343930ae2372bd0f1e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_flagL
+    second: {fileID: 2100000, guid: 38973a8df14bca345b1d2c66e7433967, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_floor01
+    second: {fileID: 2100000, guid: 571f89e0410c11e4a95a39098f503304, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_floor02
+    second: {fileID: 2100000, guid: 66a849de84fcc3748886f852f8ed5642, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_iron001
+    second: {fileID: 2100000, guid: dc9b8192fe8b81740bf5033c6ef30d6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_roofcolor01
+    second: {fileID: 2100000, guid: 91bdbc94e3485784db36975d626f3be6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_signboard01
+    second: {fileID: 2100000, guid: 8b40e565fe6e0b04fa1ab3b72c211faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_signboard02
+    second: {fileID: 2100000, guid: e6bbf08ebf147314392404257cf2056f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_signboard_near01
+    second: {fileID: 2100000, guid: 025e1c10faa49464aace72a0dabc1b75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_iron01
+    second: {fileID: 2100000, guid: a5b31a680169867498db19edf9e2ee63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_pipe
+    second: {fileID: 2100000, guid: aa975e125f427cf4db61d15024f977bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_signboard01
+    second: {fileID: 2100000, guid: f5099805ac0479745b848c87bf4eb1f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_standSide01
+    second: {fileID: 2100000, guid: 741103cb5c1796a41ad9f926bc70c973, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_standSide02
+    second: {fileID: 2100000, guid: 86e1976dc46888c46965be4b31d2b748, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dueb_startgate
+    second: {fileID: 2100000, guid: 1adbf135ab6553448995a5d44f3b62b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_Enkei_Building_3D
+    second: {fileID: 2100000, guid: 9780b4aecbb8806488c9a5c0ccde7141, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_Obj_1
+    second: {fileID: 2100000, guid: 1ce3d4be3210e3a46af38cfafb87b49f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_RoadOther2
+    second: {fileID: 2100000, guid: 9db0da5a147aeb343b9d00d548483289, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_WhiteWall_Outside
+    second: {fileID: 2100000, guid: 5e3bc1823844f8743b2394c52cfc98a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_obj_5
+    second: {fileID: 2100000, guid: 7c31921722d06404cb4f14357cc227fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_pit
+    second: {fileID: 2100000, guid: c1e22872bae6b1f48b5526a2ebb7cbf1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_steps
+    second: {fileID: 2100000, guid: 44a32240d77cb2941af9b32ffb69324f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_truck
+    second: {fileID: 2100000, guid: 459f1b18533f27e448ac1649d74327ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fc_window_1
+    second: {fileID: 2100000, guid: 42255440c1541ac4dbb3b956737b6a96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fceb_dot01
+    second: {fileID: 2100000, guid: 79b4cb9cd1f2f2b4098c9d16a35ba784, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fceb_hy_road_00_a0
+    second: {fileID: 2100000, guid: d13638a37c3ccc341bc1715f5f4047c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_UnitCarrior
+    second: {fileID: 2100000, guid: 3c06ef3fa5ec51f45863d3941393c6c4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sn_NS2_Gallery_00
+    second: {fileID: 2100000, guid: 9ac7516bdc33252468f2a19599d5b86b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sn_UniteAbe01
+    second: {fileID: 2100000, guid: 837dfc90b14814944b9f66e2cac8bacc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sn_damWall01
+    second: {fileID: 2100000, guid: 2138dc5d21075a14e8614ad47f43aa5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sn_trusMetal01
+    second: {fileID: 2100000, guid: 23e43fd3c7d704e4b93971e730d910b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sn_trusMetal01_NS
+    second: {fileID: 2100000, guid: 0533008fb3992254787c174e8ef5fdc2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tc_mktv
+    second: {fileID: 2100000, guid: d361672e259b7d9478700277b97fcd6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ufc_Light_1
+    second: {fileID: 2100000, guid: 8d8c15a0a401dfa47bd7ac881385204a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ufc_tent
+    second: {fileID: 2100000, guid: 2606be2f1f2f9524a8f66edfb9b1c4bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ufc_tent2
+    second: {fileID: 2100000, guid: 29125a2ff8be10442b8e6633a0c6d3cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ws_NS_fream02
+    second: {fileID: 2100000, guid: c082feaf19a2697408120c6bb67cf184, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ws_NS_iron00
+    second: {fileID: 2100000, guid: e988d7d6f8ca5df45b6b4a97f481e748, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ws_NS_wind02
+    second: {fileID: 2100000, guid: 6868497b74dbdf64e8b79c0746fc9760, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ws_projecter_lightOut1
+    second: {fileID: 2100000, guid: 945445f4306505640af5a43063dbad28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ws_projecter_lightOut1_NS
+    second: {fileID: 2100000, guid: 7c2e322e6b985194bb61c8076f2ce31a, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: APSitunaiWallBase_01_Alb
+    second: {fileID: 2800000, guid: 7fd1d9acd98d7f8479320c4ac071520a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Area0_Nuki_Alb
+    second: {fileID: 2800000, guid: 65a2657056e149647bb3d4ef3418c486, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DartGreenDeep2_Alb
+    second: {fileID: 2800000, guid: fdfca0e4c19fb0347869e6f3a6dc5885, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DartGreenDeep_Alb
+    second: {fileID: 2800000, guid: c74f87d5adde9474d89b9e0f8afa8281, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Du_ExciteBike_daikanban_alb
+    second: {fileID: 2800000, guid: 5ac66cd186f2f0744b1245480eebc181, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: EXTV.0
+    second: {fileID: 2800000, guid: 32abb848e53cccc4ea121dedbaca6e3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MKTV.0
+    second: {fileID: 2800000, guid: 533ad280d409e284881c5b013151c77f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: UnitCarrior_Alb
+    second: {fileID: 2800000, guid: 8b54769d8048e314c9d21787d86683dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ct_window03_Alb
+    second: {fileID: 2800000, guid: 16adbc2cb18f8cf45ab0a0c93286309b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: di_Tree_Leaf_Alb
+    second: {fileID: 2800000, guid: 7d8e4f204ab1e4d458d9b1d8f4a46205, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dsws_ry_Gallery_00_Alb.0
+    second: {fileID: 2800000, guid: 26f9fa0bdbc7de842aa03cc02fb29c9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dsws_ry_fream02_Alb
+    second: {fileID: 2800000, guid: 944c30535507dfb4ab3ced7fac410524, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dsws_ry_iron00_Alb
+    second: {fileID: 2800000, guid: 07bde0c120c29c642a4a6271ac42cb88, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dsws_ry_wind02_Alb
+    second: {fileID: 2800000, guid: 8f8f8ec57f73d0b47aef5fc8f0640bbe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_Cushion_Red_Alb
+    second: {fileID: 2800000, guid: ce605482d2531c046bc9fc17282cc4e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_DartGreenLight_Alb
+    second: {fileID: 2800000, guid: e5bd6b9c3da93094f979929b8cf2a8dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_Rediron01_Alb
+    second: {fileID: 2800000, guid: 7b887f328107e0d44bca7efbf5c64577, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_StadiumSignboard_Alb
+    second: {fileID: 2800000, guid: 17fb3bd73c3d5af48bfb8dbcaa1213cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_Tire_R_Alb
+    second: {fileID: 2800000, guid: 7ec9907a200c36e46ba82e01893745bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_Tire_W_Alb
+    second: {fileID: 2800000, guid: 40a54c53f59b3f84483ce5924920f284, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_UniteAbe01_Alb
+    second: {fileID: 2800000, guid: 55c61825e3a54a6438162a2eb6e26b6d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_WhiteWall_Alb
+    second: {fileID: 2800000, guid: 38b086a26d69d6d4a816eab5ef66fb1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_bench_Alb
+    second: {fileID: 2800000, guid: db820532f3007144091274c77e6e41f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_flagL_Alb
+    second: {fileID: 2800000, guid: eae7e1d429c2aff4995ac415e3f1fcbb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_floor01_Alb
+    second: {fileID: 2800000, guid: a663c66f1c21fb34ea984654dd594078, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_floor02_Alb
+    second: {fileID: 2800000, guid: b7397737226122f49bd8690d1d81592c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_iron001_Alb
+    second: {fileID: 2800000, guid: cf0c283ab9474c4489dd3c5e50c10c51, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_roofcolor01_Alb
+    second: {fileID: 2800000, guid: f626bfc76bd621f4080844dbb09471f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_signboard01_Alb
+    second: {fileID: 2800000, guid: 8db4d071a4672a041b7774769327e9f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_signboard02_Alb
+    second: {fileID: 2800000, guid: c35973415821afa4b8917010163d1498, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_hy_signboard_near01_Alb
+    second: {fileID: 2800000, guid: 92b134267e28db942af1f1b629c00987, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_iron01_Alb
+    second: {fileID: 2800000, guid: 2ea0e581fd688db45853b9a3a7ce5311, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_obj_4_Trm
+    second: {fileID: 2800000, guid: 6765cefd865953f45a467175a87327f1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_ot_mktvLogo_Alb
+    second: {fileID: 2800000, guid: 615f88aa78483b044af622da62ed07ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_pipe_Alb
+    second: {fileID: 2800000, guid: 8c7a4d942eb89a542998651f1c95c74b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_signboard01_Alb
+    second: {fileID: 2800000, guid: 58510c4d37715b74fbabdae4c0ca82cf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_standSide01_Alb
+    second: {fileID: 2800000, guid: 1c5b7942dc2cbe34eb2793a23d94685d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_standSide02_Alb
+    second: {fileID: 2800000, guid: cc87de7c2e59bbf44b4253d468f189b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: dueb_startgate_Alb
+    second: {fileID: 2800000, guid: e2267919cffba9740a87a49d62a67e65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fceb_dot_01_Alb
+    second: {fileID: 2800000, guid: 062287f58a521c54e8009ade6ac4b695, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fceb_hy_road00_Alb
+    second: {fileID: 2800000, guid: 706dfe779e17a7e44a514211b55eba0b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fceb_obj_01_Alb
+    second: {fileID: 2800000, guid: 6c93a8acfee5db042bd7cbddb20d7e08, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fceb_ot_projecter_Light_Alb
+    second: {fileID: 2800000, guid: 70e23e8a7b11567418577004167553a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fceb_tent_Alb
+    second: {fileID: 2800000, guid: b4c8703681cd7a54e8a417b2bb329b1d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sn_damWall01_Alb
+    second: {fileID: 2800000, guid: 8c7109204a8383145a4d829d3d0de9f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: sn_trusMetal01_Alb
+    second: {fileID: 2800000, guid: d45e64bd0443cf745b9f31380a920f0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_Enkei_Building_Alb
+    second: {fileID: 2800000, guid: 14b818695930ac54d906bda2d232a293, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_Light_1_Alb
+    second: {fileID: 2800000, guid: 3cc20a7e01b86b045a2bad40ca687726, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_RoadOther2_Alb
+    second: {fileID: 2800000, guid: 047974b655d6e9c41913a83ec8764a32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_pit_Alb
+    second: {fileID: 2800000, guid: 3d8ef2dd0c78b0f4fadd01e56153a298, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_steps_Alb
+    second: {fileID: 2800000, guid: 6638242a836e4e14bb84b5a923f2ff25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_truck_Alb
+    second: {fileID: 2800000, guid: a5d8fe34b1ce9254a8df448680a1cd3f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ufc_window_1_Alb
+    second: {fileID: 2800000, guid: e58d962c371637b4a98bc6aa79191403, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
